@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  .login-container {
+    @apply min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 p-4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/gym-background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .login-card {
+    @apply w-full max-w-md p-8 space-y-8 bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  .login-input {
+    @apply w-full bg-white/5 border-white/10 text-white placeholder:text-gray-500;
+    transition: border-color 0.2s ease;
+  }
+
+  .login-input:focus {
+    @apply border-purple-500/50;
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.1);
+  }
+
+  .login-button {
+    @apply w-full bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 
+           text-white py-2 rounded-lg transition-all duration-200 font-medium;
+    background-size: 200% auto;
+    transition: all 0.3s ease;
+  }
+
+  .login-button:hover {
+    background-position: right center;
+    transform: translateY(-1px);
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

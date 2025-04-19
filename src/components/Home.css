@@ -1,0 +1,172 @@
+.home-container * {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Header */
+.home-container .header {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.header {
+  width: 100%;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  padding: 3em 1em 2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gym-title {
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ff4d4d;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.gym-subtitle {
+  font-size: 1.4rem;
+  color: #ccc;
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* Navbar */
+.home-container .navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em 0;
+}
+
+.home-container .navbar a,
+.home-container .navbar button {
+  color: white;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.home-container .navbar a:hover,
+.home-container .navbar button:hover {
+  color: #ff4d4d;
+}
+
+/* Hero Section */
+.home-container .hero-section {
+  width: 100%;
+  min-height: 100vh;
+  /* background-image: url('your-image.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+
+.home-container .hero-section h2 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.home-container .hero-section p {
+  font-size: 1.2em;
+  max-width: 600px;
+}
+
+/* About Section */
+.home-container .about-section {
+  width: 100%;
+  background-color: #111;
+  color: white;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.home-container .about-section p {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Footer */
+.home-container .footer {
+  width: 100%;
+  background-color: #111;
+  color: #ccc;
+  padding: 3em 2em;
+}
+
+.home-container .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home-container .footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.home-container .footer-column h4 {
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.home-container .footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-container .footer-column ul li {
+  margin-bottom: 0.5em;
+}
+
+.home-container .footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.home-container .footer-column ul li a:hover {
+  color: #ff4d4d;
+}
+
+.home-container .footer-bottom {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.85em;
+  color: #777;
+  border-top: 1px solid #333;
+  padding-top: 1em;
+}

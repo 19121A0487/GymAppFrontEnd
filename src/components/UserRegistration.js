@@ -25,6 +25,8 @@ const UserRegistration = () => {
     try {
       const response = await axios.post("/register", user);
       setMessage(response.data); // Success message from API
+      let id=response.data.id;
+      localStorage.setItem("cust_id",id);
       navigate("/login"); // Redirect to login page after successful registration
     } catch (error) {
       setMessage("Registration failed. Please try again.");

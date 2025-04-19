@@ -1,0 +1,142 @@
+/* Wrapper for the login page */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('./images/gymLogin.jpg') no-repeat center center/cover;
+  /* Add a fallback background image, if you want */
+  background-image: url('./images/gymLogin2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white; /* Make text color white for visibility on dark background */
+}
+
+
+
+/* Title of the form */
+.form-title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Input field container */
+.input-container {
+  margin-bottom: 1rem;
+}
+
+/* Main form styling */
+.form {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem;
+  max-width: 350px;
+  width: 90%; /* Adjusted from 100% to 90% to allow for inner padding */
+  box-sizing: border-box; /* Ensures padding stays within the defined width */
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding + border are included in width */
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+
+/* Forgot password link */
+.forgot-password-container {
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.forgot-password {
+  color: #6B7280;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.forgot-password:hover {
+  color: #4F46E5;
+}
+
+/* Submit button styling */
+.submit {
+  background-color: #4F46E5;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #3B3F8C;
+}
+
+/* Social button container */
+.social-buttons button {
+  margin-top: 0.5rem;
+  background-color: #4285F4;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.social-buttons button:hover {
+  background-color: #3367D6;
+}
+
+.google-button {
+  background-color: #4285F4;
+}
+
+.facebook-button {
+  background-color: #3b5998;
+}
+
+.facebook-button:hover {
+  background-color: #2d4373;
+}
+
+/* Sign up button */
+.signup-button {
+  margin-top: 0.5rem;
+  background-color: #34b7f1;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.signup-button:hover {
+  background-color: #1a91cc;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

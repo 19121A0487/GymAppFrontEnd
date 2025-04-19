@@ -1,0 +1,164 @@
+/* Light Theme (Default) */
+:root {
+    --bg-color: #f0f4ff;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --heading-color: #4f46e5;
+    --highlight-color: #16a34a;
+    --button-bg: #4f46e5;
+    --button-hover-bg: #4338ca;
+    --footer-color: #888;
+  }
+  
+  /* Dark Theme Overrides */
+  body.dark-mode {
+    --bg-color: #1e1e2f;
+    --card-bg: #2a2a3d;
+    --text-color: #f0f0f0;
+    --heading-color: #a5b4fc;
+    --highlight-color: #4ade80;
+    --button-bg: #6366f1;
+    --button-hover-bg: #818cf8;
+    --footer-color: #aaa;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Navbar Styles */
+  .navbar, .nav-links{
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar  h1 {
+    color: var(--heading-color);
+    margin: 0;
+  }
+  
+  .nav-left .nav-links{
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 2rem;
+  }
+  
+  .nav-links li {
+    margin-right: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+  
+  .nav-links a:hover {
+    color: var(--highlight-color);
+  }
+  
+  /* Main Container Styles */
+  .container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .container h2 {
+    color: var(--heading-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  .payment-info p {
+    font-size: 1rem;
+    margin: 0.75rem 0;
+    line-height: 1.6;
+  }
+  
+  .payment-info p span {
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .payment-info h3 {
+    color: var(--highlight-color);
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+  
+  .button-wrapper {
+    margin-top: 2rem;
+  }
+  
+  .payment-button {
+    background-color: var(--button-bg);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-button:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--footer-color);
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Theme Toggle Button */
+  .theme-toggle {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 2px solid var(--button-bg);
+    border-radius: 6px;
+    color: var(--button-bg);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: var(--button-bg);
+    color: white;
+  }
+  
